@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculateSum() {
+            document.getElementsByName("ADD1")[0].value = 
+                Number(document.getElementsByName("number1")[0].value) +
+                Number(document.getElementsByName("number2")[0].value) +
+                Number(document.getElementsByName("number3")[0].value);
+
+            document.getElementsByName("ADD2")[0].value = 
+                Number(document.getElementsByName("number4")[0].value) +
+                Number(document.getElementsByName("number5")[0].value) +
+                Number(document.getElementsByName("number6")[0].value);
+
+            document.getElementsByName("ADD3")[0].value = 
+                Number(document.getElementsByName("number7")[0].value) +
+                Number(document.getElementsByName("number8")[0].value) +
+                Number(document.getElementsByName("number9")[0].value);
+
+            document.getElementsByName("ADD4")[0].value = 
+                Number(document.getElementsByName("number1")[0].value) +
+                Number(document.getElementsByName("number4")[0].value) +
+                Number(document.getElementsByName("number7")[0].value);
+
+            document.getElementsByName("ADD5")[0].value = 
+                Number(document.getElementsByName("number2")[0].value) +
+                Number(document.getElementsByName("number5")[0].value) +
+                Number(document.getElementsByName("number8")[0].value);
+
+            document.getElementsByName("ADD6")[0].value = 
+                Number(document.getElementsByName("number3")[0].value) +
+                Number(document.getElementsByName("number6")[0].value) +
+                Number(document.getElementsByName("number9")[0].value);
+        }
+    </script>
+    <style>
+        body{
+            height: 100 ;
+            width: 100;
+            background-color: gray;
+        }
+        #add6{
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h3>ADD THE NUMBER</h3>
+        <input type="number" id="add" name="number1" oninput="calculateSum()">
+        <input type="number" id="add" name="number2" oninput="calculateSum()">
+        <input type="number" id= "add"name="number3" oninput="calculateSum()">
+        <input type="number" name="ADD1" readonly>
+        <br>
+        <input type="number" id="add"name="number4" oninput="calculateSum()">
+        <input type="number" id="add" name="number5" oninput="calculateSum()">
+        <input type="number" id="add" name="number6" oninput="calculateSum()">
+        <input type="number" name="ADD2" readonly>
+        <br>
+        <input type="number" id="add" name="number7" oninput="calculateSum()">
+        <input type="number" id="add" name="number8" oninput="calculateSum()">
+        <input type="number" id="add" name="number9" oninput="calculateSum()">
+        <input type="number" name="ADD3" readonly>
+        <br>
+        <input type="number" name="ADD4" readonly>
+        <input type="number" name="ADD5" readonly>
+        <input type="number" name="ADD6" readonly>
+        <input type="number" id="add6"name="ADD6" readonly>
+
+    </center>
+</body>
+</html>
